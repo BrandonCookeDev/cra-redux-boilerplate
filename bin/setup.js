@@ -43,7 +43,7 @@ if(fs.existsSync(PROJECT_IMPL_DIR) && fs.readdirSync(PROJECT_IMPL_DIR).length > 
 
 createDir()
 createContent()
-installNpmDependencies()
+//installNpmDependencies() // not working needs debugging
 
 console.log('Done!')
 process.exit(0);

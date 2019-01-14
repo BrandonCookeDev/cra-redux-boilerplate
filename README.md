@@ -9,7 +9,7 @@ This is a personalized boilerplate script run via npm bin folder. It is run afte
 In order to use, perform the following:
 
 ```bash
-npm i --save-dev cra-redux-boilerplate
+npm i --save cra-redux-boilerplate
 ```
 
 and after run the following
@@ -23,6 +23,11 @@ Windows
 ```cmd
 start node_modules\.bin\cra-redux
 ```
+
+_NOTE: (npm i --save) not in dev to make sure the following modules get installed (implicitly by this package)_
+* redux
+* react-redux
+* react-thunk
 
 ## Impact
 
@@ -47,8 +52,3 @@ This package creates the following directory tree into your project:
 +|    |     |     |-- components
 +|    |     |     |       |-- DeleteMe.js    
 ```
-
-This package also installs 3 npm modules for you:
-* redux
-* react-redux
-* react-thunk
