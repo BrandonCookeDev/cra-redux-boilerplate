@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import store from '../../store'
 import { deleteMe, noSeriouslyDeleteMe } from '../../actions/deleteMeActions'
 import { Provider } from 'react-redux'
+import { connect } from 'react-redux'
 
 class DeleteMe extends Component {
   constructor(props){
@@ -74,7 +75,7 @@ const mapStateToProps = state => ({
   noSeriouslyDeleteMe: state.deleteMe.noSeriouslyDeleteMe
 })
 
-Posts.propTypes = {
+DeleteMe.propTypes = {
     deleteMe: PropTypes.func.isRequired,
     noSeriouslyDeleteMe: PropTypes.func.isRequired
 }

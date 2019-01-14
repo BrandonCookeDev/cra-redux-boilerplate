@@ -1,5 +1,5 @@
 
-import { DELETE_ME_TYPE, NO_SERIOUSLY_DELETE_ME } from '../actions/types'
+import { DELETE_ME_TYPE, NO_SERIOUSLY_DELETE_ME, FETCH_POSTS, NEW_POST } from '../actions/types'
 
  const initialState = {
     items: [],

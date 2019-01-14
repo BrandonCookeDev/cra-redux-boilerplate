@@ -1,4 +1,4 @@
-import { DELETE_ME_TYPE, NO_SERIOUSLY_DELETE_ME } from './types'
+import { DELETE_ME_TYPE, NO_SERIOUSLY_DELETE_ME, NEW_POST, FETCH_POSTS } from './types'
 
 export function deleteMe(){
     return function(dispatch){
