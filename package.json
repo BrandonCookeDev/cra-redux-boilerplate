@@ -1,9 +1,9 @@
 {
   "name": "cra-redux-boilerplate",
-  "version": "0.0.9",
+  "version": "0.0.10",
   "description": "Personalized post cra boilerplate for redux",
   "bin": {
-    "cra-redux": "setup.js"
+    "cra-redux": "bin/setup.js"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
