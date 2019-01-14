@@ -1,6 +1,12 @@
 #!/usr/bin/env node
 'use strict';
 
+const errHandle = e => { console.error(e); process.exit(1); }
+process.on('error', errHandle)
+process.on('SIGINT', errHandle)
+process.on('uncaughtException', errHandle)
+process.on('unhandledRejection', errHandle)
+
 const fs = require('fs-extra')
     , path = require('path')
     , cp = require('child_process')
@@ -31,3 +37,6 @@ if(fs.existsSync(PROJECT_IMPL_DIR) && fs.readdirSync(PROJECT_IMPL_DIR).length > 
 createDir()
 createContent()
 installNpmDependencies()
+
+console.log('Done!')
+process.exit(0);
