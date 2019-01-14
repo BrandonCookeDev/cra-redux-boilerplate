@@ -32,7 +32,7 @@ function createContent(){
 
 function installNpmDependencies(){
     console.time('Installing npm dependencies')
-    let cmd = format(`npm install --prefix ${PROJECT_ROOT} --save redux react-redux redux-thunk`)
+    let cmd = format(`npm install --prefix "${PROJECT_ROOT}" --save redux react-redux redux-thunk`)
     console.log('Running install command: %s', cmd)
     cp.execSync(cmd)
     console.time('Installing npm dependencies')
