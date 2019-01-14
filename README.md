@@ -24,3 +24,24 @@ Windows
 start node_modules\.bin\cra-redux
 ```
 
+This package creates the following directory tree into your project:
+(_NOTE: All deleteMe files are for example content_)
+
+```diff
+|-- public
+|-- src
++|    |-- redux
++|    |     |-- store.js
++|    |     |
++|    |     |-- actions
++|    |     |      |-- types.js
++|    |     |      |-- deleteMeActions.js 
++|    |     |
++|    |     |-- reducers
++|    |     |      |-- index.js
++|    |     |      |-- deleteMeReducer.js
++|    |     |
++|    |     |-- sample
++|    |     |     |-- components
++|    |     |     |       |-- DeleteMe.js    
+```
