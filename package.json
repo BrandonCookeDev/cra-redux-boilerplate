@@ -1,0 +1,19 @@
+{
+  "name": "cra-redux-boilerplate",
+  "version": "0.0.9",
+  "description": "Personalized post cra boilerplate for redux",
+  "bin": {
+    "cra-redux": "setup.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Brandon Cooke <bcooke91@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "react-redux": "^6.0.0",
+    "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0"
+  }
+}
