@@ -24,6 +24,8 @@ Windows
 start node_modules\.bin\cra-redux
 ```
 
+## Impact
+
 This package creates the following directory tree into your project:
 (_NOTE: All deleteMe files are for example content_)
 
@@ -45,3 +47,8 @@ This package creates the following directory tree into your project:
 +|    |     |     |-- components
 +|    |     |     |       |-- DeleteMe.js    
 ```
+
+This package also installs 3 npm modules for you:
+* redux
+* react-redux
+* react-thunk

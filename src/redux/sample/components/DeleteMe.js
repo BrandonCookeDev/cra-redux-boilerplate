@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import store from '../../store'
 import { deleteMe, noSeriouslyDeleteMe } from '../../actions/deleteMeActions'
+import { Provider } from 'react-redux'
 
 class DeleteMe extends Component {
   constructor(props){
