@@ -1,6 +1,6 @@
 {
   "name": "cra-redux-boilerplate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Personalized post cra boilerplate for redux",
   "bin": {
     "cra-redux": "bin/setup.js"
