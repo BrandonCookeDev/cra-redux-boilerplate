@@ -18,17 +18,24 @@ const SRC_ROOT = path.join(__dirname, '..', 'src')
     , PROJECT_IMPL_DIR = path.join(PROJECT_ROOT, 'src', 'redux')
 
 function createDir(){
+    console.time('Creating dir')
     if(!fs.existsSync(PROJECT_IMPL_DIR))
         fs.mkdirSync(PROJECT_IMPL_DIR)
+    console.timeEnd('Creating dir')
 }
 
 function createContent(){
+    console.time('Creating content')
     fs.copySync(REDUX_ROOT, PROJECT_IMPL_DIR)
+    console.timeEnd('Creating content')
 }
 
 function installNpmDependencies(){
+    console.time('Installing npm dependencies')
     let cmd = format('npm install --prefix %s --save redux react-redux redux-thunk', PROJECT_ROOT, PROJECT_ROOT)
+    console.log('Running install command: %s', cmd)
     cp.execSync(cmd)
+    console.time('Installing npm dependencies')
 }
 
 if(fs.existsSync(PROJECT_IMPL_DIR) && fs.readdirSync(PROJECT_IMPL_DIR).length > 0)
