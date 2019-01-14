@@ -1,6 +1,6 @@
 {
   "name": "cra-redux-boilerplate",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Personalized post cra boilerplate for redux",
   "bin": {
     "cra-redux": "bin/setup.js"
@@ -18,6 +18,10 @@
     "script",
     "post"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrandonCookeDev/cra-redux-boilerplate"
+  },
   "author": "Brandon Cooke <bcooke91@gmail.com>",
   "license": "ISC",
   "dependencies": {
